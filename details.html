@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Details page</title>
+        <meta charset="utf-8">
+    </head>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <body>
+        <div class="r1"><h1><b>Enter Patient Details</b></h1><br><a href="login" class="right">Logout</a>
+            <a href="home" class="right">Homepage</a></div>
+        <div class="r2">
+            <form action="add_patient">
+                <br><br>Patient name: &nbsp&nbsp <input type="text" placeholder="Enter Patient's Name" name="pname">
+                <br>Patient ID: &nbsp&nbsp <input type="text" placeholder="Enter Patient's ID" name="id">
+                <br>Patient's Medication: &nbsp&nbsp <input type="text" placeholder="Enter The Medication" name="meds">
+                <br>Room Number: &nbsp&nbsp <input type="text" placeholder="Enter Patient's Room Number" name="r_no">
+                <br><br><input type="submit" value="Add Patient Details">
+            </form>
+        </div>
+        <div class="r3"><footer><br>CONTACT US:&nbsp +91 2222 0000<br><br>EMAIL US:&nbsp the_hospital@mmail.com </footer></div>
+        </div>
+    </body>
+</html>

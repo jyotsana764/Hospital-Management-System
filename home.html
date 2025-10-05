@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Home page</title>
+        <meta charset="utf-8">
+        
+    </head>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <body>
+        <div class="r1"><h1><b>MENU</b></h1><br><a href="login" class="right">Logout</a></div>
+        <div class="r4">
+            <br><br><br><br><a href="details">Add Patient Details</a>
+            <form action="show">
+                <br><br><br><br><input type="submit" value="View Patient Details" >
+            </form>
+        </div>
+        <div class="r3"><footer><br>CONTACT US:&nbsp +91 2222 0000<br><br>EMAIL US:&nbsp the_hospital@mmail.com </footer> </div>
+        
+    </body>
+</html>

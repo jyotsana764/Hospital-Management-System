@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Display page</title>
+        <meta charset="utf-8">
+       
+    </head>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <body>
+        <div class="r1"><h1>PATIENT DETAILS</h1><br><a href="login" class="right">Logout</a>
+            <a href="home1" class="right">Homepage</a></div>
+            <br><br><br>
+        <div class="r2">
+            <table style="width:70%" class="center">
+                <tr style="height: 70px"><td><h3><b>Pname</b></h3></td><td><h3><b>Patient_id</b></h3></td><td><h3><b>Medication</b></h3></td><td><h3><b>Room_no</b></h3></td></tr>
+                {% for i in a %}
+                <tr style="height: 70px"><td>{{i.pname}}</td><td>{{i.patient_id}}</td><td>{{i.medication}}</td></td><td>{{i.room_no}}</td></tr>
+                {% endfor %}
+            </table>
+        </div>  
+    </body>
+</html>
